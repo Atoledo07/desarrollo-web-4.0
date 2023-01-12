@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app-1">
+        <h1 v-if="ver">Hola mundo</h1>
+    </div>
+    <div id="app-2">
+        <ol>
+            <li v-for="todo in todos">
+                {{todo.text}}
+
+            </li>
+        </ol>
+    </div>
+    <div id="app-3">
+        <span v-bind:title="mensaje">
+            Pruebame
+        </span>
+    </div>
+
+    <div id="app-4">
+        <p> {{m1}} </p>
+        <button v-on:click="presiona">Presiona</button>
+    </div>
+
+    <div id="app-5">
+        <p>{{m2}}</p>
+
+        <input v-model="m2">
+    </div>
+    
+
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
